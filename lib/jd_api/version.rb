@@ -1,0 +1,3 @@
+module JdApi
+  VERSION = "0.0.1"
+end
