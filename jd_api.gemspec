@@ -6,10 +6,10 @@ require 'jd_api/version'
 Gem::Specification.new do |spec|
   spec.name          = "jd_api"
   spec.version       = JdApi::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.authors       = ["cedric"]
+  spec.email         = ["cedric_chenzhong@163.com"]
+  spec.description   = %q{ get goods info from jd }
+  spec.summary       = %q{ get goods info from jd just with url }
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+
 end
