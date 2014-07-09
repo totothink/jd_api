@@ -1,6 +1,6 @@
 # JdApi
 
-TODO: Write a gem description
+Jingdong api with ruby
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+good = JdApi::Good.new
+
+p good.base_info('981821,1094930,1115374')
+```
 
 ## Contributing
 
