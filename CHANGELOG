@@ -1,0 +1,3 @@
+- 0.0.2
+  * 重构api
+  * 新增catelogy_list,product_list_by_catelogy,base_book,book_big_field接口

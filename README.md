@@ -19,9 +19,11 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-good = JdApi::Good.new
+@app_key = 'app_key'
+@app_secret = 'app_secret'
+client = JdApi::Client.new(@app_key, @app_secret)
 
-p good.base_info('981821,1094930,1115374')
+p client.base_product('981821,1094930,1115374')
 ```
 
 ## Contributing
