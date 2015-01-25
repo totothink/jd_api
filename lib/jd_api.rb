@@ -12,9 +12,8 @@ module JdApi
       @app_secret = app_secret
     end
 
-    def catelogy_list(catelogy_id, level, fields = 'id,fid,status,lev,name,index_id', is_icon = false, is_desc = false)
+    def catelogy_list(catelogy_id, level, is_icon = false, is_desc = false)
       params = {
-        'base' => fields,
         'isIcon' => is_icon,
         'isDescription' => is_desc,
         'client' => 'm',
@@ -34,7 +33,7 @@ module JdApi
       request('jingdong.ware.promotion.search.catelogy.list', params)
     end
 
-    def base_product(ids, fields = "name, image_path")
+    def base_product(ids, fields = "sku_id,name,image_path,state,is_delete,brand_name,value_weight,length,width,height,value_pay_first,weight,cid2,product_area,sale_date,wserve,allnum,brand_id,color,color_sequence,size,size_sequence,ebrand,cbrand,model,category")
       params = {
         'base' => fields,
         'ids' => ids
